@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F042K6 -ID:\MicroController\STM32F0\ElectronicLock\cmsis_lib -ID:\MicroController\STM32F0\ElectronicLock\cmsis_core -ID:\MicroController\STM32F0\ElectronicLock\cmsis_boot -ID:\MicroController\STM32F0\ElectronicLock\cmsis_lib\include -ID:\MicroController\STM32F0\ElectronicLock -ID:\MicroController -ID:\MicroController\STM32F0">
+      <target file="stm32f0xx_gpio.o" lastModified="15998825052">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_gpio.c" lastModified="159964fbdfd"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="15998825308">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="15995eb377d"/>
+      </target>
+      <target file="stm32f0xx_tim.o" lastModified="159988251e5">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159964feab9"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="15998824d37">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_rcc.c" lastModified="159964fba32"/>
+      </target>
+      <target file="main.o" lastModified="159988be09b">
+         <source file="..\..\..\main.c" lastModified="159969a702a"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="15998824df6">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="15995eb377d"/>
+      </target>
+      <target file="func.o" lastModified="159988950ef">
+         <source file="..\..\..\func.c" lastModified="15998894c3e"/>
+      </target>
+   </processor>
+</history>

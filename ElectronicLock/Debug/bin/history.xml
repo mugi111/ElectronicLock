@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=ElectronicLock.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock -TC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock/arm-gcc-link.ld -g">
+      <target file="ElectronicLock.elf" lastModified="159988be3a1">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="15998824d37"/>
+         <source file="..\obj\main.o" lastModified="159988be09b"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="15998824df6"/>
+         <source file="..\obj\func.o" lastModified="159988950ef"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="15998825052"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="159988251e5"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="15998825308"/>
+      </target>
+   </processor>
+</history>
