@@ -1,9 +1,15 @@
+#ifndef __FUNC
+#define __FUNC
 
-int pass[4] = {0, 0, 0, 0};
-int flagSharp;
+extern int pass[4];
+extern int input[4];
+extern int flagAste;
+extern int inputCNT;
 
 void generalInit(void);
 int readSW(int status);
 void judgeNum(int SWnum);
-int checkPass(int input[]);
+void checkPass(void);
 void DriveMotor(int dig);
+
+#endif /*__FUNC*/
