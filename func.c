@@ -1,5 +1,10 @@
 #include "stm32f0xx_gpio.h"
+#include "stm32f0xx_tim.h"
 
+int pass[4] = {0, 0, 0, 0};
+int input[4];
+int flagAste = 0;
+int inputCNT = 0;
 
 void generalInit()
 {
@@ -86,15 +91,22 @@ int readSW(int status)
 
 void judgeNum(int SWnum)
 {
-
+	if((SWnum!=-1)&&(SWnum<10)){
+		input[inputCNT] = SWnum;
+		inputCNT++;
+	}else if(SWnum==11){
+		flagAste = ~flagAste;
+	}else if(SWnum==12){
+		checkPass();
+	}
 }
 
-int checkPass(int input[])
+void checkPass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
-		return 1;
+		DriveMotor(90);
 	}else {
-		return 0;
+		flagAste = 0;
 	}
 }
 
