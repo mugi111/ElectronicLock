@@ -571,12 +571,22 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(ElectronicLock.elf elf32-littlearm)
 
+<<<<<<< HEAD
 .debug_info     0x00000000      0xe4d
  .debug_info    0x00000000       0x47 ..\obj\main.o
  .debug_info    0x00000047       0xe6 ..\obj\startup_stm32f0xx.o
  .debug_info    0x0000012d      0x3f7 ..\obj\func.o
  .debug_info    0x00000524      0x619 ..\obj\stm32f0xx_gpio.o
  .debug_info    0x00000b3d      0x310 ..\obj\system_stm32f0xx.o
+=======
+.debug_info     0x00000000     0x2d51
+ .debug_info    0x00000000       0x47 ..\obj\main.o
+ .debug_info    0x00000047       0xe6 ..\obj\startup_stm32f0xx.o
+ .debug_info    0x0000012d      0x46a ..\obj\func.o
+ .debug_info    0x00000597      0x619 ..\obj\stm32f0xx_gpio.o
+ .debug_info    0x00000bb0     0x1e91 ..\obj\stm32f0xx_tim.o
+ .debug_info    0x00002a41      0x310 ..\obj\system_stm32f0xx.o
+>>>>>>> origin/master
 
 .debug_abbrev   0x00000000      0x49d
  .debug_abbrev  0x00000000       0x39 ..\obj\main.o
@@ -608,6 +618,7 @@ OUTPUT(ElectronicLock.elf elf32-littlearm)
  .debug_ranges  0x00000010       0x20 ..\obj\startup_stm32f0xx.o
  .debug_ranges  0x00000030       0x30 ..\obj\func.o
  .debug_ranges  0x00000060       0x70 ..\obj\stm32f0xx_gpio.o
+<<<<<<< HEAD
  .debug_ranges  0x000000d0       0x20 ..\obj\system_stm32f0xx.o
 
 .debug_line     0x00000000      0x847
@@ -624,6 +635,28 @@ OUTPUT(ElectronicLock.elf elf32-littlearm)
  .debug_str     0x00000356      0x1cd ..\obj\stm32f0xx_gpio.o
                                 0x450 (size before relaxing)
  .debug_str     0x00000523      0x15a ..\obj\system_stm32f0xx.o
+=======
+ .debug_ranges  0x000000d0      0x2f0 ..\obj\stm32f0xx_tim.o
+ .debug_ranges  0x000003c0       0x20 ..\obj\system_stm32f0xx.o
+
+.debug_line     0x00000000     0x1291
+ .debug_line    0x00000000       0x7b ..\obj\main.o
+ .debug_line    0x0000007b       0xc6 ..\obj\startup_stm32f0xx.o
+ .debug_line    0x00000141      0x280 ..\obj\func.o
+ .debug_line    0x000003c1      0x306 ..\obj\stm32f0xx_gpio.o
+ .debug_line    0x000006c7      0xa34 ..\obj\stm32f0xx_tim.o
+ .debug_line    0x000010fb      0x196 ..\obj\system_stm32f0xx.o
+
+.debug_str      0x00000000     0x128d
+ .debug_str     0x00000000       0x96 ..\obj\main.o
+ .debug_str     0x00000096      0x33d ..\obj\func.o
+                                0x3c1 (size before relaxing)
+ .debug_str     0x000003d3      0x1c5 ..\obj\stm32f0xx_gpio.o
+                                0x450 (size before relaxing)
+ .debug_str     0x00000598      0xb9b ..\obj\stm32f0xx_tim.o
+                                0xda2 (size before relaxing)
+ .debug_str     0x00001133      0x15a ..\obj\system_stm32f0xx.o
+>>>>>>> origin/master
                                 0x255 (size before relaxing)
 
 .comment        0x00000000       0x70

@@ -37,7 +37,11 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" partName="func.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" title="func.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.c"/>
+<<<<<<< HEAD
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2257" selectionTopPixel="1367"/>
+=======
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1967" selectionTopPixel="879"/>
+>>>>>>> origin/master
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.c" partName="system_stm32f0xx.c" path="D:/MicroController/STM32F0/ElectronicLock/cmsis_boot/system_stm32f0xx.c" title="system_stm32f0xx.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/cmsis_boot/system_stm32f0xx.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_boot/system_stm32f0xx.c"/>

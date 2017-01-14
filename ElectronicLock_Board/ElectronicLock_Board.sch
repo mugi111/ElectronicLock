@@ -29,7 +29,10 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:STM32F0_DIO-Slave_ver0.0.0board-cache
+<<<<<<< HEAD
 LIBS:ElectronicLock_Board-cache
+=======
+>>>>>>> origin/master
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -143,6 +146,7 @@ $EndComp
 Wire Wire Line
 	9150 4050 9100 4050
 Connection ~ 9100 4050
+<<<<<<< HEAD
 $Comp
 L CONN_01X06 P?
 U 1 1 5879FD9F
@@ -220,4 +224,6 @@ F 3 "" H 3250 5350 50  0000 C CNN
 	1    3250 5350
 	1    0    0    -1  
 $EndComp
+=======
+>>>>>>> origin/master
 $EndSCHEMATC
