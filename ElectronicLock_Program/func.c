@@ -1,5 +1,4 @@
 #include "stm32f0xx_gpio.h"
-#include "stm32f0xx_tim.h"
 
 int pass[4] = {0, 0, 0, 0};
 int input[4];
@@ -29,13 +28,6 @@ void generalInit()
 	DisplayLED.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	DisplayLED.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOA, &DisplayLED);
-
-	TIM_TimeBaseInitTypeDef StatusCount;
-//	StatusCount.TIM_ClockDivision =
-//	StatusCount.TIM_CounterMode =
-//	StatusCount.TIM_Period =
-//	StatusCount.TIM_Prescaler =
-	TIM_TimeBaseStructInit(&StatusCount);
 
 }
 

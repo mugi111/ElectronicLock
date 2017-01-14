@@ -8,8 +8,8 @@ extern int inputCNT;
 
 void generalInit(void);
 int readSW(int status);
-void judgeNum(int SWnum);
 void checkPass(void);
+void judgeNum(int SWnum);
 void DriveMotor(int dig);
 
 #endif /*__FUNC*/

@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=ElectronicLock.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock -TC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock/arm-gcc-link.ld -g">
-      <target file="ElectronicLock.elf" lastModified="1599c5fb8e6">
-         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1599c5faf74"/>
-         <source file="..\obj\main.o" lastModified="1599c5fb01f"/>
-         <source file="..\obj\startup_stm32f0xx.o" lastModified="1599c5fb0a8"/>
-         <source file="..\obj\func.o" lastModified="1599c5fb216"/>
-         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1599c5fb33c"/>
-         <source file="..\obj\stm32f0xx_tim.o" lastModified="1599c5fb4e2"/>
-         <source file="..\obj\system_stm32f0xx.o" lastModified="1599c5fb5f0"/>
+      <target file="ElectronicLock.elf" lastModified="1599c7f5cf9">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1599c7dfe0f"/>
+         <source file="..\obj\timer.o" lastModified="1599c7dff74"/>
+         <source file="..\obj\main.o" lastModified="1599c7f5a58"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="1599c7e00c3"/>
+         <source file="..\obj\func.o" lastModified="1599c7e3848"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1599c7e03f0"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="1599c7e05da"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="1599c7e0701"/>
       </target>
    </processor>
 </history>
