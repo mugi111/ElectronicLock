@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F042K6 -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib\include -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_core -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_boot -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\header -ID:\MicroController\STM32F0\ElectronicLock -ID:\MicroController\STM32F0">
+      <target file="timer.o" lastModified="159a644a2d6">
+         <source file="..\..\..\source\timer.c" lastModified="159a6449a69"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="159a644a49b">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_gpio.c" lastModified="159a6409dd0"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="159a644a612">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="159a6407d8d"/>
+      </target>
+      <target file="stm32f0xx_tim.o" lastModified="159a644a5a4">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159a640bb8a"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="159a644a259">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_rcc.c" lastModified="159a64092e3"/>
+      </target>
+      <target file="main.o" lastModified="159a644a333">
+         <source file="..\..\..\main.c" lastModified="159a6400110"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="159a644a353">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e"/>
+      </target>
+      <target file="func.o" lastModified="159a64599b8">
+         <source file="..\..\..\func.c" lastModified="159a6459633"/>
+      </target>
+   </processor>
+</history>

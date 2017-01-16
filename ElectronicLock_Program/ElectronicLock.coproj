@@ -72,12 +72,12 @@
     <Component id="1099" name="TIM" path="" type="2"/>
   </Components>
   <Files>
-    <File name="cmsis_core/core_cmInstr.h" path="cmsis_core/core_cmInstr.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
+    <File name="cmsis_core/core_cmInstr.h" path="cmsis_core/core_cmInstr.h" type="1"/>
     <File name="cmsis_lib/source/stm32f0xx_tim.c" path="cmsis_lib/source/stm32f0xx_tim.c" type="1"/>
     <File name="cmsis_lib/include/stm32f0xx_rcc.h" path="cmsis_lib/include/stm32f0xx_rcc.h" type="1"/>
-    <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f0xx.c" path="cmsis_boot/system_stm32f0xx.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_core/core_cmFunc.h" path="cmsis_core/core_cmFunc.h" type="1"/>
     <File name="func.c" path="func.c" type="1"/>
     <File name="source" path="" type="2"/>
@@ -86,11 +86,11 @@
     <File name="cmsis_core" path="" type="2"/>
     <File name="cmsis_boot/stm32f0xx.h" path="cmsis_boot/stm32f0xx.h" type="1"/>
     <File name="source/timer.c" path="source/timer.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f0xx_gpio.h" path="cmsis_lib/include/stm32f0xx_gpio.h" type="1"/>
-    <File name="cmsis_lib" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f0xx_gpio.c" path="cmsis_lib/source/stm32f0xx_gpio.c" type="1"/>
-    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f0xx_gpio.h" path="cmsis_lib/include/stm32f0xx_gpio.h" type="1"/>
     <File name="cmsis_lib/source/stm32f0xx_rcc.c" path="cmsis_lib/source/stm32f0xx_rcc.c" type="1"/>
+    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name="func.h" path="func.h" type="1"/>
     <File name="cmsis_boot/system_stm32f0xx.h" path="cmsis_boot/system_stm32f0xx.h" type="1"/>

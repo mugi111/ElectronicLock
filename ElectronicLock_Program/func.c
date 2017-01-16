@@ -1,4 +1,5 @@
 #include "stm32f0xx_gpio.h"
+#include "func.h"
 
 int pass[4] = {0, 0, 0, 0};
 int input[4];
