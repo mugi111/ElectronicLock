@@ -47,13 +47,13 @@
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h"/>
          <include file="..\..\..\header\timer.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h" lastModified="159a64092d3">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
       <source file="..\..\..\func.c" lastModified="159a67104f4">
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h"/>
          <include file="..\..\..\func.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h" lastModified="159a64092d3">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="159a6407d8d">
       </source>
