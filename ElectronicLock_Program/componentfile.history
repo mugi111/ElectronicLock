@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<History> 
+  <File usedCount="2" path="cmsis_core/core_cm0.h"/>  
+  <File usedCount="2" path="cmsis_core/core_cmfunc.h"/>  
+  <File usedCount="2" path="cmsis_core/core_cminstr.h"/>  
+  <File usedCount="2" path="cmsis_boot/startup/startup_stm32f0xx.s"/>  
+  <File usedCount="2" path="cmsis_boot/stm32f0xx.h"/>  
+  <File usedCount="2" path="cmsis_boot/system_stm32f0xx.c"/>  
+  <File usedCount="2" path="cmsis_boot/system_stm32f0xx.h"/>  
+  <File usedCount="2" path="cmsis_lib/include/stm32f0xx_rcc.h"/>  
+  <File usedCount="2" path="cmsis_lib/source/stm32f0xx_rcc.c"/>  
+  <File usedCount="2" path="cmsis_lib/include/stm32f0xx_gpio.h"/>  
+  <File usedCount="2" path="cmsis_lib/source/stm32f0xx_gpio.c"/>  
+  <File usedCount="2" path="cmsis_lib/include/stm32f0xx_tim.h"/>  
+  <File usedCount="2" path="cmsis_lib/source/stm32f0xx_tim.c"/>
+</History>
