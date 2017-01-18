@@ -28,7 +28,7 @@ void SW_GPIO_Init()
 	GPIO_InitTypeDef SW_Input;
 	SW_Input.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6;
 	SW_Input.GPIO_Mode = GPIO_Mode_IN;
-	SW_Input.GPIO_PuPd = GPIO_PuPd_UP;
+	SW_Input.GPIO_PuPd = GPIO_PuPd_DOWN;
 	SW_Input.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOA, &SW_Input);
 
@@ -79,6 +79,30 @@ void judgeNum(int SWnum)
 	}else if(SWnum==12){
 		checkPass();
 	}
+}
+
+int checkSW(int status)
+{
+	switch (status) {
+		case 0:
+			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4))		GPIO_WriteBit(GPIOA, GPIO_Pin_7, 1);
+			break;
+
+		case 1:
+
+			break;
+
+		case 2:
+
+			break;
+
+		case 3:
+
+		default:
+			break;
+	}
+	GPIO_WriteBit(GPIOA, GPIO_Pin_7, 0);
+	return 0;
 }
 
 void checkPass()

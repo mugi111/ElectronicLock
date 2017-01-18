@@ -8,6 +8,7 @@ extern int inputCNT;
 
 void SW_GPIO_Init(void);
 void OPSwitching(int status);
+int checkSW(int status);
 void checkPass(void);
 void judgeNum(int SWnum);
 void DriveMotor(int dig);

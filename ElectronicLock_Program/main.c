@@ -9,13 +9,14 @@ int main(void)
 	SW_GPIO_Init();
 	TIM3_Init(4800, 1000);
 	TIM3CH1_PWMConfig(1200);
-	TIM14_Init(4800, 10);
+	TIM14_Init(4800, 1000);
 
 	NVIC_EnableIRQ(TIM14_IRQn);
 
     while(1)
     {
     	OPSwitching(status);
+    	checkSW(status);
     }
 }
 

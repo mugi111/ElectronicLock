@@ -27,7 +27,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" title="main.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="278" selectionTopPixel="95"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="191" selectionTopPixel="85"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="timer.h" partName="timer.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/header/timer.h" title="timer.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/header/timer.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/header/timer.h"/>
@@ -39,11 +39,11 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" partName="func.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" title="func.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2723" selectionTopPixel="1630"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="964" selectionTopPixel="581"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.h" partName="func.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" title="func.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="136" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="165" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" partName="stm32f0xx.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/stm32f0xx.h" title="stm32f0xx.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/stm32f0xx.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_boot/stm32f0xx.h"/>
@@ -137,7 +137,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.30884558" ratioLeft="206" ratioRight="461" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e4436"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.27286357" ratioLeft="182" ratioRight="485" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e4436"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@65a686" ratio="0.7194313" ratioLeft="759" ratioRight="296" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
@@ -271,73 +271,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_boot/stm32f0xx.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/header/timer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
 </editors>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="81" y="26"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="2467" y="0"/>
-</item>
-<item historyLabel="func.h" index="4">
-<position info="not_deleted" x="136" y="0"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="2467" y="0"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="81" y="26"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="255" y="0"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="778" y="6"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="255" y="0"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="183" y="0"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="778" y="6"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="139" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="81" y="26"/>
-</item>
-<item historyLabel="timer.h" index="1">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="110" y="0"/>
-</item>
-<item historyLabel="func.c" index="0">
-<position info="not_deleted" x="420" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="266" y="0"/>
-</item>
 <item historyLabel="timer.h" index="1">
 <position info="not_deleted" x="64" y="0"/>
 </item>
@@ -419,8 +357,74 @@
 <item historyLabel="func.c" index="6">
 <position info="not_deleted" x="2723" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="3">
+<item historyLabel="main.c" index="3">
 <position info="not_deleted" x="278" y="0"/>
+</item>
+<item historyLabel="timer.h" index="8">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="timer.c" index="9">
+<position info="not_deleted" x="81" y="26"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="2090" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="274" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1041" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="760" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1052" y="8"/>
+</item>
+<item historyLabel="timer.c" index="9">
+<position info="not_deleted" x="81" y="26"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1053" y="11"/>
+</item>
+<item historyLabel="func.h" index="11">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1052" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="255" y="11"/>
+</item>
+<item historyLabel="timer.h" index="8">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1052" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="255" y="11"/>
+</item>
+<item historyLabel="timer.h" index="8">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="1064" y="0"/>
+</item>
+<item historyLabel="func.h" index="11">
+<position info="not_deleted" x="165" y="0"/>
+</item>
+<item historyLabel="func.c" index="10">
+<position info="not_deleted" x="964" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="255" y="11"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
