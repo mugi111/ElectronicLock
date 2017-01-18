@@ -7,7 +7,7 @@ extern int flagAste;
 extern int inputCNT;
 
 void SW_GPIO_Init(void);
-int readSW(int status);
+void OPSwitching(int status);
 void checkPass(void);
 void judgeNum(int SWnum);
 void DriveMotor(int dig);

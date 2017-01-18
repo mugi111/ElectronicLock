@@ -339,7 +339,7 @@ Linker script and memory map
 
                 0x20001800                _eram = 0x20001800
 
-.text           0x08000000      0xd9c
+.text           0x08000000      0xd90
  *(.isr_vector)
  .isr_vector    0x08000000       0xc4 ..\obj\startup_stm32f0xx.o
                 0x08000000                g_pfnVectors
@@ -414,42 +414,43 @@ Linker script and memory map
  .text.SW_GPIO_Init
                 0x08000498       0xa8 ..\obj\func.o
                 0x08000498                SW_GPIO_Init
- .text.readSW   0x08000540      0x11c ..\obj\func.o
-                0x08000540                readSW
+ .text.OPSwitching
+                0x08000540      0x110 ..\obj\func.o
+                0x08000540                OPSwitching
  .text.GPIO_Init
-                0x0800065c      0x138 ..\obj\stm32f0xx_gpio.o
-                0x0800065c                GPIO_Init
+                0x08000650      0x138 ..\obj\stm32f0xx_gpio.o
+                0x08000650                GPIO_Init
  .text.GPIO_WriteBit
-                0x08000794       0x30 ..\obj\stm32f0xx_gpio.o
-                0x08000794                GPIO_WriteBit
+                0x08000788       0x30 ..\obj\stm32f0xx_gpio.o
+                0x08000788                GPIO_WriteBit
  .text.GPIO_PinAFConfig
-                0x080007c4       0x9c ..\obj\stm32f0xx_gpio.o
-                0x080007c4                GPIO_PinAFConfig
+                0x080007b8       0x9c ..\obj\stm32f0xx_gpio.o
+                0x080007b8                GPIO_PinAFConfig
  .text.TIM_TimeBaseInit
-                0x08000860       0xf0 ..\obj\stm32f0xx_tim.o
-                0x08000860                TIM_TimeBaseInit
+                0x08000854       0xf0 ..\obj\stm32f0xx_tim.o
+                0x08000854                TIM_TimeBaseInit
  .text.TIM_ARRPreloadConfig
-                0x08000950       0x40 ..\obj\stm32f0xx_tim.o
-                0x08000950                TIM_ARRPreloadConfig
- .text.TIM_Cmd  0x08000990       0x40 ..\obj\stm32f0xx_tim.o
-                0x08000990                TIM_Cmd
+                0x08000944       0x40 ..\obj\stm32f0xx_tim.o
+                0x08000944                TIM_ARRPreloadConfig
+ .text.TIM_Cmd  0x08000984       0x40 ..\obj\stm32f0xx_tim.o
+                0x08000984                TIM_Cmd
  .text.TIM_OC1Init
-                0x080009d0      0x1a4 ..\obj\stm32f0xx_tim.o
-                0x080009d0                TIM_OC1Init
+                0x080009c4      0x1a4 ..\obj\stm32f0xx_tim.o
+                0x080009c4                TIM_OC1Init
  .text.TIM_OC1PreloadConfig
-                0x08000b74       0x54 ..\obj\stm32f0xx_tim.o
-                0x08000b74                TIM_OC1PreloadConfig
+                0x08000b68       0x54 ..\obj\stm32f0xx_tim.o
+                0x08000b68                TIM_OC1PreloadConfig
  .text.TIM_ITConfig
-                0x08000bc8       0x48 ..\obj\stm32f0xx_tim.o
-                0x08000bc8                TIM_ITConfig
+                0x08000bbc       0x48 ..\obj\stm32f0xx_tim.o
+                0x08000bbc                TIM_ITConfig
  .text.TIM_ClearITPendingBit
-                0x08000c10       0x20 ..\obj\stm32f0xx_tim.o
-                0x08000c10                TIM_ClearITPendingBit
+                0x08000c04       0x20 ..\obj\stm32f0xx_tim.o
+                0x08000c04                TIM_ClearITPendingBit
  .text.SystemInit
-                0x08000c30       0x8c ..\obj\system_stm32f0xx.o
-                0x08000c30                SystemInit
+                0x08000c24       0x8c ..\obj\system_stm32f0xx.o
+                0x08000c24                SystemInit
  .text.SetSysClock
-                0x08000cbc       0xe0 ..\obj\system_stm32f0xx.o
+                0x08000cb0       0xe0 ..\obj\system_stm32f0xx.o
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -465,35 +466,35 @@ Linker script and memory map
  *(.rodata*)
  *(.eh_fram e*)
 
-.glue_7         0x08000d9c        0x0
+.glue_7         0x08000d90        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x08000d9c        0x0
+.glue_7t        0x08000d90        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08000d9c        0x0
+.vfp11_veneer   0x08000d90        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08000d9c        0x0
+.v4_bx          0x08000d90        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08000d9c        0x0
+.iplt           0x08000d90        0x0
  .iplt          0x00000000        0x0 ..\obj\stm32f0xx_rcc.o
 
-.rel.dyn        0x08000d9c        0x0
+.rel.dyn        0x08000d90        0x0
  .rel.iplt      0x00000000        0x0 ..\obj\stm32f0xx_rcc.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000d9c                __exidx_start = .
+                0x08000d90                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08000d9c                __exidx_end = .
-                0x08000d9c                __etext = .
-                0x08000d9c                _sidata = __etext
+                0x08000d90                __exidx_end = .
+                0x08000d90                __etext = .
+                0x08000d90                _sidata = __etext
 
-.data           0x20000000        0x0 load address 0x08000d9c
+.data           0x20000000        0x0 load address 0x08000d90
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -562,25 +563,25 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(ElectronicLock.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x4614
+.debug_info     0x00000000     0x4602
  .debug_info    0x00000000      0xb09 ..\obj\stm32f0xx_rcc.o
  .debug_info    0x00000b09      0x960 ..\obj\timer.o
  .debug_info    0x00001469      0x533 ..\obj\main.o
  .debug_info    0x0000199c       0xe6 ..\obj\startup_stm32f0xx.o
- .debug_info    0x00001a82      0x3d8 ..\obj\func.o
- .debug_info    0x00001e5a      0x619 ..\obj\stm32f0xx_gpio.o
- .debug_info    0x00002473     0x1e91 ..\obj\stm32f0xx_tim.o
- .debug_info    0x00004304      0x310 ..\obj\system_stm32f0xx.o
+ .debug_info    0x00001a82      0x3c6 ..\obj\func.o
+ .debug_info    0x00001e48      0x619 ..\obj\stm32f0xx_gpio.o
+ .debug_info    0x00002461     0x1e91 ..\obj\stm32f0xx_tim.o
+ .debug_info    0x000042f2      0x310 ..\obj\system_stm32f0xx.o
 
-.debug_abbrev   0x00000000      0xa6f
+.debug_abbrev   0x00000000      0xa53
  .debug_abbrev  0x00000000      0x1ee ..\obj\stm32f0xx_rcc.o
  .debug_abbrev  0x000001ee      0x161 ..\obj\timer.o
  .debug_abbrev  0x0000034f      0x117 ..\obj\main.o
  .debug_abbrev  0x00000466       0x12 ..\obj\startup_stm32f0xx.o
- .debug_abbrev  0x00000478      0x16d ..\obj\func.o
- .debug_abbrev  0x000005e5      0x19d ..\obj\stm32f0xx_gpio.o
- .debug_abbrev  0x00000782      0x1b7 ..\obj\stm32f0xx_tim.o
- .debug_abbrev  0x00000939      0x136 ..\obj\system_stm32f0xx.o
+ .debug_abbrev  0x00000478      0x151 ..\obj\func.o
+ .debug_abbrev  0x000005c9      0x19d ..\obj\stm32f0xx_gpio.o
+ .debug_abbrev  0x00000766      0x1b7 ..\obj\stm32f0xx_tim.o
+ .debug_abbrev  0x0000091d      0x136 ..\obj\system_stm32f0xx.o
 
 .debug_loc      0x00000000     0x231c
  .debug_loc     0x00000000      0x8d4 ..\obj\stm32f0xx_rcc.o
@@ -619,30 +620,30 @@ OUTPUT(ElectronicLock.elf elf32-littlearm)
  .debug_ranges  0x00000258      0x2f0 ..\obj\stm32f0xx_tim.o
  .debug_ranges  0x00000548       0x20 ..\obj\system_stm32f0xx.o
 
-.debug_line     0x00000000     0x1bcb
+.debug_line     0x00000000     0x1bc9
  .debug_line    0x00000000      0x563 ..\obj\stm32f0xx_rcc.o
  .debug_line    0x00000563      0x298 ..\obj\timer.o
  .debug_line    0x000007fb      0x1f3 ..\obj\main.o
  .debug_line    0x000009ee       0xc6 ..\obj\startup_stm32f0xx.o
- .debug_line    0x00000ab4      0x247 ..\obj\func.o
- .debug_line    0x00000cfb      0x306 ..\obj\stm32f0xx_gpio.o
- .debug_line    0x00001001      0xa34 ..\obj\stm32f0xx_tim.o
- .debug_line    0x00001a35      0x196 ..\obj\system_stm32f0xx.o
+ .debug_line    0x00000ab4      0x245 ..\obj\func.o
+ .debug_line    0x00000cf9      0x306 ..\obj\stm32f0xx_gpio.o
+ .debug_line    0x00000fff      0xa34 ..\obj\stm32f0xx_tim.o
+ .debug_line    0x00001a33      0x196 ..\obj\system_stm32f0xx.o
 
-.debug_str      0x00000000     0x1af2
+.debug_str      0x00000000     0x1af7
  .debug_str     0x00000000      0x6c9 ..\obj\stm32f0xx_rcc.o
                                 0x748 (size before relaxing)
  .debug_str     0x000006c9      0x65f ..\obj\timer.o
                                 0x763 (size before relaxing)
  .debug_str     0x00000d28       0x6d ..\obj\main.o
                                 0x458 (size before relaxing)
- .debug_str     0x00000d95       0xba ..\obj\func.o
-                                0x353 (size before relaxing)
- .debug_str     0x00000e4f      0x1a2 ..\obj\stm32f0xx_gpio.o
+ .debug_str     0x00000d95       0xbf ..\obj\func.o
+                                0x358 (size before relaxing)
+ .debug_str     0x00000e54      0x1a2 ..\obj\stm32f0xx_gpio.o
                                 0x450 (size before relaxing)
- .debug_str     0x00000ff1      0xa41 ..\obj\stm32f0xx_tim.o
+ .debug_str     0x00000ff6      0xa41 ..\obj\stm32f0xx_tim.o
                                 0xda2 (size before relaxing)
- .debug_str     0x00001a32       0xc0 ..\obj\system_stm32f0xx.o
+ .debug_str     0x00001a37       0xc0 ..\obj\system_stm32f0xx.o
                                 0x255 (size before relaxing)
 
 .comment        0x00000000       0x70

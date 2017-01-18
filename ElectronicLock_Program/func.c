@@ -35,9 +35,8 @@ void SW_GPIO_Init()
 	GPIO_WriteBit(GPIOA, GPIO_Pin_7, 0);
 }
 
-int readSW(int status)
+void OPSwitching(int status)
 {
-	int SWnum = -1;
 	switch (status) {
 		case 0:
 			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 1);
@@ -68,7 +67,6 @@ int readSW(int status)
 		default:
 			break;
 	}
-	return SWnum;
 }
 
 void judgeNum(int SWnum)
