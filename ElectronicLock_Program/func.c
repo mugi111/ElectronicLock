@@ -12,12 +12,18 @@ void SW_GPIO_Init()
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
 
 	GPIO_InitTypeDef SW_Output;
-	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
+	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_7;
 	SW_Output.GPIO_Mode = GPIO_Mode_OUT;
 	SW_Output.GPIO_PuPd = GPIO_PuPd_UP;
 	SW_Output.GPIO_Speed = GPIO_Speed_Level_1;
 //	SW_Output.GPIO_OType =
 	GPIO_Init(GPIOA, &SW_Output);
+
+	GPIO_InitTypeDef debug_led;
+	debug_led.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
+	debug_led.GPIO_Mode = GPIO_Mode_OUT;
+	debug_led.GPIO_Speed = GPIO_Speed_Level_1;
+	GPIO_Init(GPIOB, &debug_led);
 
 	GPIO_InitTypeDef SW_Input;
 	SW_Input.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6;
@@ -26,6 +32,7 @@ void SW_GPIO_Init()
 	SW_Input.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOA, &SW_Input);
 
+	GPIO_WriteBit(GPIOA, GPIO_Pin_7, 0);
 }
 
 int readSW(int status)
@@ -37,13 +44,6 @@ int readSW(int status)
 			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4)){
-				SWnum = 1;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5)){
-				SWnum = 2;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_6)){
-				SWnum = 3;
-			}
 			break;
 
 		case 1:
@@ -51,13 +51,6 @@ int readSW(int status)
 			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 1);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4)){
-				SWnum = 4;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5)){
-				SWnum = 5;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_6)){
-				SWnum = 6;
-			}
 			break;
 
 		case 2:
@@ -65,13 +58,6 @@ int readSW(int status)
 			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 1);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4)){
-				SWnum = 7;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5)){
-				SWnum = 8;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_6)){
-				SWnum = 9;
-			}
 			break;
 
 		case 3:
@@ -79,15 +65,6 @@ int readSW(int status)
 			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 1);
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4)){
-				SWnum = 11;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5)){
-				SWnum = 0;
-			}else if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_6)){
-				SWnum = 12;
-			}
-			break;
-
 		default:
 			break;
 	}
