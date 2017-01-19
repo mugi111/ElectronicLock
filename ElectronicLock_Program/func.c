@@ -81,11 +81,13 @@ void judgeNum(int SWnum)
 	}
 }
 
-int checkSW(int status)
+int readSW(int status)
 {
+	int SWnum = -1;
+
 	switch (status) {
 		case 0:
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4))		GPIO_WriteBit(GPIOA, GPIO_Pin_7, 1);
+			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4))
 			break;
 
 		case 1:

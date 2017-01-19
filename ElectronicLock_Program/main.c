@@ -16,7 +16,7 @@ int main(void)
     while(1)
     {
     	OPSwitching(status);
-    	checkSW(status);
+    	readSW(status);
     }
 }
 
