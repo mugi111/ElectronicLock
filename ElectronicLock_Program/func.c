@@ -3,7 +3,7 @@
 #include "func.h"
 
 int pass[4] = {0, 0, 0, 0};
-int input[4];
+int input[4] = {-1, -1, -1, -1};
 int flagAste = 0;
 int inputCNT = 0;
 
@@ -16,7 +16,6 @@ void SW_GPIO_Init()
 	SW_Output.GPIO_Mode = GPIO_Mode_OUT;
 	SW_Output.GPIO_PuPd = GPIO_PuPd_UP;
 	SW_Output.GPIO_Speed = GPIO_Speed_Level_1;
-//	SW_Output.GPIO_OType =
 	GPIO_Init(GPIOA, &SW_Output);
 
 	GPIO_InitTypeDef debug_led;
@@ -73,6 +72,7 @@ void judgeNum(int SWnum)
 {
 	if((SWnum!=-1)&&(SWnum<10)){
 		input[inputCNT] = SWnum;
+		GPIO_WriteBit(GPIOA, GPIO_Pin_7, inputCNT%2);
 		inputCNT++;
 	}else if(SWnum==11){
 		flagAste = ~flagAste;
@@ -81,35 +81,16 @@ void judgeNum(int SWnum)
 	}
 }
 
-int readSW(int status)
-{
-	int SWnum = -1;
-
-	switch (status) {
-		case 0:
-			if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4))
-			break;
-
-		case 1:
-
-			break;
-
-		case 2:
-
-			break;
-
-		case 3:
-
-		default:
-			break;
-	}
-	GPIO_WriteBit(GPIOA, GPIO_Pin_7, 0);
-	return 0;
-}
+//int readSW(int status)
+//{
+//	int SWnum = -1;
+//	return 0;
+//}
 
 void checkPass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
+		GPIO_WriteBit(GPIOA, GPIO_Pin_7, 1);
 		DriveMotor(90);
 	}else {
 		flagAste = 0;
