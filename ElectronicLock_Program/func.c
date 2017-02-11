@@ -1,5 +1,6 @@
 #include "stm32f0xx_gpio.h"
 #include "stm32f0xx_rcc.h"
+#include "stm32f0xx_exti.h"
 #include "func.h"
 
 int pass[4] = {0, 0, 0, 0};
@@ -9,7 +10,7 @@ int inputCNT = 0;
 
 void SW_GPIO_Init()
 {
-	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA | RCC_AHBPeriph_GPIOB, ENABLE);
 
 	GPIO_InitTypeDef SW_Output;
 	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_7;
@@ -17,12 +18,11 @@ void SW_GPIO_Init()
 	SW_Output.GPIO_PuPd = GPIO_PuPd_UP;
 	SW_Output.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOA, &SW_Output);
+}
 
-	GPIO_InitTypeDef debug_led;
-	debug_led.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
-	debug_led.GPIO_Mode = GPIO_Mode_OUT;
-	debug_led.GPIO_Speed = GPIO_Speed_Level_1;
-	GPIO_Init(GPIOB, &debug_led);
+void SW_EXTI_Init(void)
+{
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
 
 	GPIO_InitTypeDef SW_Input;
 	SW_Input.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6;
@@ -31,7 +31,14 @@ void SW_GPIO_Init()
 	SW_Input.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOA, &SW_Input);
 
-	GPIO_WriteBit(GPIOA, GPIO_Pin_7, 0);
+	EXTI_InitTypeDef EXTI_InitStructure;
+	EXTI_InitStructure.EXTI_Line = EXTI_Line4 | EXTI_Line5 | EXTI_Line6;
+	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling;
+	EXTI_Init(&EXTI_InitStructure);
+
+	NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
 void OPSwitching(int status)

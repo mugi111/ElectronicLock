@@ -18,6 +18,7 @@ int main(void)
     while(1)
     {
 
+
     	OPSwitching(status);
     }
 }
@@ -29,4 +30,19 @@ void TIM14_IRQHandler(void)
 
 
 	TIM_ClearITPendingBit(TIM14,  TIM_IT_Update);
+}
+
+void EXTI4_IRQHandler(void)
+{
+
+}
+
+void EXTI5_IRQHandler(void)
+{
+
+}
+
+void EXTI6_IRQHandler(void)
+{
+
 }
