@@ -39,7 +39,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h" lastModified="159a64092d3">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
       </source>
-      <source file="..\..\..\func.h" lastModified="15a2d0b1b31">
+      <source file="..\..\..\func.h" lastModified="15a2d30a121">
       </source>
       <source file="..\..\..\main.c" lastModified="15a2d23d242">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>

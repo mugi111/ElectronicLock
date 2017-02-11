@@ -10,10 +10,10 @@ int inputCNT = 0;
 
 void SW_GPIO_Init()
 {
-	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA | RCC_AHBPeriph_GPIOB, ENABLE);
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
 
 	GPIO_InitTypeDef SW_Output;
-	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_7;
+	SW_Output.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
 	SW_Output.GPIO_Mode = GPIO_Mode_OUT;
 	SW_Output.GPIO_PuPd = GPIO_PuPd_UP;
 	SW_Output.GPIO_Speed = GPIO_Speed_Level_1;
@@ -29,7 +29,7 @@ void SW_EXTI_Init(void)
 	SW_Input.GPIO_Mode = GPIO_Mode_IN;
 	SW_Input.GPIO_PuPd = GPIO_PuPd_DOWN;
 	SW_Input.GPIO_Speed = GPIO_Speed_Level_1;
-	GPIO_Init(GPIOA, &SW_Input);
+	GPIO_Init(GPIOB, &SW_Input);
 
 	EXTI_InitTypeDef EXTI_InitStructure;
 	EXTI_InitStructure.EXTI_Line = EXTI_Line4 | EXTI_Line5 | EXTI_Line6;
@@ -45,31 +45,31 @@ void OPSwitching(int status)
 {
 	switch (status) {
 		case 0:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 1);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_11, 0);
 			break;
 
 		case 1:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 1);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_11, 0);
 			break;
 
 		case 2:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 1);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_11, 0);
 			break;
 
 		case 3:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_1, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_2, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_3, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_11, 1);
 		default:
 			break;
 	}
@@ -88,16 +88,9 @@ void judgeNum(int SWnum)
 	}
 }
 
-//int readSW(int status)
-//{
-//	int SWnum = -1;
-//	return 0;
-//}
-
 void checkPass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
-		GPIO_WriteBit(GPIOA, GPIO_Pin_7, 1);
 		DriveMotor(90);
 	}else {
 		flagAste = 0;
