@@ -7,10 +7,8 @@ extern int flagAste;
 extern int inputCNT;
 
 void SW_GPIO_Init(void);
-void SW_EXTI_Init(void);
-void OPSwitching(int status);
-void checkPass(void);
-void judgeNum(int SWnum);
-void DriveMotor(int dig);
+void Chenge_Output(int status);
+void Check_Pass(void);
+void DriveServo(int dig);
 
 #endif /*__FUNC*/
