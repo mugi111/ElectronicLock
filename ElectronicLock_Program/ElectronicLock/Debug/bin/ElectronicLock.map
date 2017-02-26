@@ -171,6 +171,7 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x31 ..\obj\printf.o
  .text          0x00000000        0x0 ..\obj\func.o
+ .bss           0x00000000        0x4 ..\obj\func.o
  .text.DriveServo
                 0x00000000       0x10 ..\obj\func.o
  .text          0x00000000        0x0 ..\obj\stm32f0xx_gpio.o
@@ -596,61 +597,58 @@ Linker script and memory map
                 0x08001534                __etext = .
                 0x08001534                _sidata = __etext
 
-.data           0x20000000       0x10 load address 0x08001534
+.data           0x20000000       0x20 load address 0x08001534
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
  *(.data*)
- .data          0x20000000       0x10 ..\obj\func.o
-                0x20000000                input
-                0x20000010                . = ALIGN (0x4)
+ .data          0x20000000       0x20 ..\obj\func.o
+                0x20000000                pass
+                0x20000010                input
+                0x20000020                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
                 [!provide]                PROVIDE (__preinit_array_end, .)
-                0x20000010                . = ALIGN (0x4)
+                0x20000020                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
                 [!provide]                PROVIDE (__init_array_end, .)
-                0x20000010                . = ALIGN (0x4)
+                0x20000020                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array)
                 [!provide]                PROVIDE (__fini_array_end, .)
  *(.jcr*)
-                0x20000010                . = ALIGN (0x4)
-                0x20000010                __data_end__ = .
-                0x20000010                _edata = __data_end__
+                0x20000020                . = ALIGN (0x4)
+                0x20000020                __data_end__ = .
+                0x20000020                _edata = __data_end__
 
-.igot.plt       0x20000010        0x0 load address 0x08001544
- .igot.plt      0x20000010        0x0 ..\obj\semihosting.o
+.igot.plt       0x20000020        0x0 load address 0x08001554
+ .igot.plt      0x20000020        0x0 ..\obj\semihosting.o
 
-.bss            0x20000010       0x14 load address 0x08001544
-                0x20000010                . = ALIGN (0x4)
-                0x20000010                __bss_start__ = .
-                0x20000010                _sbss = __bss_start__
+.bss            0x20000020        0x0
+                0x20000020                . = ALIGN (0x4)
+                0x20000020                __bss_start__ = .
+                0x20000020                _sbss = __bss_start__
  *(.bss*)
- .bss           0x20000010       0x14 ..\obj\func.o
-                0x20000010                pass
-                0x20000020                inputCNT
  *(COMMON)
-                0x20000024                . = ALIGN (0x4)
-                0x20000024                __bss_end__ = .
-                0x20000024                _ebss = __bss_end__
+                0x20000020                . = ALIGN (0x4)
+                0x20000020                __bss_end__ = .
+                0x20000020                _ebss = __bss_end__
 
-.heap           0x20000024        0x0
-                0x20000024                __end__ = .
-                0x20000024                _end = __end__
-                0x20000024                end = __end__
+.heap           0x20000020        0x0
+                0x20000020                __end__ = .
+                0x20000020                _end = __end__
+                0x20000020                end = __end__
  *(.heap*)
-                0x20000024                __HeapLimit = .
+                0x20000020                __HeapLimit = .
 
-.co_stack       0x20000024        0x4 load address 0x08001558
-                0x20000028                . = ALIGN (0x8)
- *fill*         0x20000024        0x4 
+.co_stack       0x20000020        0x0
+                0x20000020                . = ALIGN (0x8)
  *(.co_stack .co_stack.*)
                 0x20001800                __StackTop = (ORIGIN (ram) + LENGTH (ram))
-                0x200017fc                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x20001800                __StackLimit = (__StackTop - SIZEOF (.co_stack))
                 [!provide]                PROVIDE (__stack, __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
 LOAD ..\obj\semihosting.o

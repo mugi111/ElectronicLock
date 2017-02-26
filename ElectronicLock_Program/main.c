@@ -87,8 +87,8 @@ RETURN:
 			for(i=0;i<12;i++){
 				if((keypad_prev[i] != keypad[i])&&(keypad[i] == -1)){
 					if(i < 10){
-						for (j=2; j>=0; j--)	input[j+1] = input[j];
-						input[0] = i;
+						for (j=0; j<3; j++)	input[j] = input[j+1];
+						input[3] = i;
 					}else if(i == 10){
 						NVIC_EnableIRQ(TIM14_IRQn);
 						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);

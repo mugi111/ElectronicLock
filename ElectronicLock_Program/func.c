@@ -3,7 +3,7 @@
 #include "stm32f0xx_exti.h"
 #include "func.h"
 
-int pass[4] = {0, 0, 0, 0};
+int pass[4] = {3, 5, 0, 2};
 int input[4] = {-1, -1, -1, -1};
 int inputCNT = 0;
 
