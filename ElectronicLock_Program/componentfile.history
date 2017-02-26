@@ -13,5 +13,6 @@
   <File usedCount="2" path="cmsis_lib/include/stm32f0xx_gpio.h"/>  
   <File usedCount="2" path="cmsis_lib/source/stm32f0xx_gpio.c"/>  
   <File usedCount="2" path="cmsis_lib/include/stm32f0xx_tim.h"/>  
-  <File usedCount="2" path="cmsis_lib/source/stm32f0xx_tim.c"/>
+  <File usedCount="2" path="cmsis_lib/source/stm32f0xx_tim.c"/>  
+  <File usedCount="2" path="stdio/printf.c"/>
 </History>

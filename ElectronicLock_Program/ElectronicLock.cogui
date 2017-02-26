@@ -23,15 +23,13 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" title="main.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" title="main.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="511" selectionTopPixel="298"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="549" selectionTopPixel="318"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="timer.h" partName="timer.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/header/timer.h" title="timer.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/header/timer.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/header/timer.h"/>
@@ -39,57 +37,47 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="timer.c" partName="timer.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" title="timer.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/source/timer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1938" selectionTopPixel="826"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" partName="func.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" title="func.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="276" selectionTopPixel="1222"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="463" selectionTopPixel="50"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.h" partName="func.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" title="func.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="204" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="193" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" partName="stm32f0xx.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/stm32f0xx.h" title="stm32f0xx.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/stm32f0xx.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_boot/stm32f0xx.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="14919" selectionTopPixel="13171"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" partName="func.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" title="func.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="122" selectionOffset="1570" selectionTopPixel="770"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.c" partName="stm32f0xx_exti.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/source/stm32f0xx_exti.c" title="stm32f0xx_exti.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/source/stm32f0xx_exti.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_lib/source/stm32f0xx_exti.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1987"/>
+<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">&#x0A;<subPage horizontalPosition="0" selectedItemId="31" subPageIndex="2" verticalPosition="0"/>
+</input>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.h" partName="stm32f0xx_exti.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_exti.h" title="stm32f0xx_exti.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_exti.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_exti.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1802" selectionTopPixel="2910"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" partName="printf.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/stdio/printf.c" title="printf.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/stdio/printf.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/stdio/printf.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="791" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm0.h" partName="core_cm0.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_core/core_cm0.h" title="core_cm0.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_core/core_cm0.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_core/core_cm0.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26344" selectionTopPixel="8434"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.h" partName="stm32f0xx_gpio.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_gpio.h" title="stm32f0xx_gpio.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12719" selectionTopPixel="5466"/>
+<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" partName="startup_stm32f0xx.s" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/startup/startup_stm32f0xx.s" title="startup_stm32f0xx.s" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_boot/startup/startup_stm32f0xx.s" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_boot/startup/startup_stm32f0xx.s"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState>
-<ExpressionKeySet ExpKeys="status,"/>
+<ExpressionKeySet ExpKeys="column,row,i,"/>
 </viewState>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="17">
+<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="10">
 <expanded>
 <element path="/ElectronicLock"/>
 <element path="/ElectronicLock/cmsis_boot"/>
-<element path="/ElectronicLock/cmsis_core"/>
-<element path="/ElectronicLock/cmsis_lib"/>
-<element path="/ElectronicLock/cmsis_lib/include"/>
-<element path="/ElectronicLock/cmsis_lib/source"/>
+<element path="/ElectronicLock/cmsis_boot/startup"/>
 <element path="/ElectronicLock/header"/>
 <element path="/ElectronicLock/source"/>
+<element path="/ElectronicLock/stdio"/>
 </expanded>
 <selection>
-<element path="/ElectronicLock/func.c"/>
+<element path="/ElectronicLock/main.c"/>
 </selection>
 </viewState>
 </view>
@@ -100,6 +88,9 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.coocox.component.ui.Help" partName="Help">
 <viewState/>
 </view>
 </views>
@@ -136,6 +127,7 @@
 <view id="org.coocox.component.ui.ComponentView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.coocox.component.ui.Help"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -153,7 +145,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@134901" ratio="0.69953054" ratioLeft="447" ratioRight="192" relationship="4" relative="org.eclipse.ui.internal.ViewStack@e4436">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@134901" ratio="0.66092944" ratioLeft="384" ratioRight="197" relationship="4" relative="org.eclipse.ui.internal.ViewStack@e4436">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -161,18 +153,25 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.27286357" ratioLeft="182" ratioRight="485" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e4436"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@65a686" ratio="0.7194313" ratioLeft="759" ratioRight="296" relationship="2" relative="org.coocox.builder.ui.exampleView">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ec37fc" ratio="0.27286357" ratioLeft="182" ratioRight="485" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e4436">
 <folder appearance="2" expanded="2">
-<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
+<page content="org.coocox.builder.ui.exampleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@65a686" ratio="0.7194313" ratioLeft="759" ratioRight="296" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ec37fc">
+<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
+<page content="org.coocox.component.ui.Help" label="Help"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.44913927" ratioLeft="287" ratioRight="352" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.44913927" ratioLeft="287" ratioRight="352" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ec37fc"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@a06577" ratio="0.36932707" ratioLeft="236" ratioRight="403" relationship="4" relative="org.eclipse.ui.internal.ViewStack@e4436">
 <folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
 <page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
@@ -226,57 +225,80 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
 <hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@15839e4">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@15839e4">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@f1c3eb" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f1c3eb" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">
+<folder appearance="2" expanded="2">
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@25ce16" ratio="0.5031447" ratioLeft="320" ratioRight="316" relationship="4" relative="org.eclipse.ui.internal.ViewStack@15839e4">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@25ce16" ratio="0.5031447" ratioLeft="320" ratioRight="316" relationship="4" relative="org.eclipse.ui.internal.ViewStack@15839e4">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a99b73" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.ui.internal.ViewStack@25ce16">&#x0A;<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a99b73" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.ui.internal.ViewStack@25ce16">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@353be6" ratio="0.67179847" ratioLeft="960" ratioRight="469" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@353be6" ratio="0.67179847" ratioLeft="960" ratioRight="469" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.23417722" ratioLeft="222" ratioRight="726" relationship="2" relative="org.eclipse.ui.internal.ViewStack@15839e4"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@74571" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@74571" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@a51cbf" ratio="0.7488076" ratioLeft="471" ratioRight="158" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@a51cbf" ratio="0.7488076" ratioLeft="471" ratioRight="158" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@a8393a" ratio="0.49962434" ratioLeft="665" ratioRight="666" relationship="2" relative="org.eclipse.ui.internal.ViewStack@a51cbf">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@a8393a" ratio="0.49962434" ratioLeft="665" ratioRight="666" relationship="2" relative="org.eclipse.ui.internal.ViewStack@a51cbf">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -290,166 +312,156 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/source/stm32f0xx_exti.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_exti.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_boot/stm32f0xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/header/timer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/source/stm32f0xx_tim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_core/core_cm0.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_gpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
 </editors>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="666" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1188" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="596" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1180" y="69"/>
-</item>
-<item historyLabel="func.h" index="3">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1247" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="81" y="26"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1247" y="0"/>
-</item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1926" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1247" y="0"/>
-</item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1956" y="0"/>
-</item>
-<item historyLabel="stm32f0xx_tim.c" index="8">
-<position info="not_deleted" x="20829" y="0"/>
-</item>
-<item historyLabel="stm32f0xx_tim.h" index="9">
-<position info="not_deleted" x="45413" y="7"/>
-</item>
-<item historyLabel="stm32f0xx_tim.c" index="8">
-<position info="not_deleted" x="20829" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1956" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="327" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="264" y="0"/>
+<position info="not_deleted" x="339" y="0"/>
 </item>
-<item historyLabel="core_cm0.h" index="10">
-<position info="not_deleted" x="26344" y="0"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="stm32f0xx.h" index="6">
-<position info="not_deleted" x="14735" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="341" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="362" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="387" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="414" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="440" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3621" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5627" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5629" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5677" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3621" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5627" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5629" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="491" y="0"/>
 </item>
 <item historyLabel="func.c" index="1">
-<position info="not_deleted" x="910" y="0"/>
+<position info="not_deleted" x="912" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_exti.h" index="5">
-<position info="not_deleted" x="1802" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="491" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5627" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="508" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="692" y="0"/>
 </item>
 <item historyLabel="func.c" index="1">
-<position info="not_deleted" x="910" y="0"/>
+<position info="not_deleted" x="912" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_exti.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="stm32f0xx_exti.h" index="5">
-<position info="not_deleted" x="1802" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="692" y="0"/>
 </item>
 <item historyLabel="func.c" index="1">
-<position info="not_deleted" x="686" y="0"/>
+<position info="not_deleted" x="1278" y="122"/>
 </item>
-<item historyLabel="stm32f0xx_gpio.h" index="11">
-<position info="not_deleted" x="12719" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="692" y="0"/>
+</item>
+<item historyLabel="func.c" index="1">
+<position info="not_deleted" x="1424" y="122"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="692" y="0"/>
 </item>
 <item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1956" y="0"/>
-</item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="264" y="0"/>
-</item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
+<position info="not_deleted" x="463" y="0"/>
 </item>
 <item historyLabel="func.c" index="1">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="func.h" index="3">
-<position info="not_deleted" x="157" y="0"/>
+<position info="not_deleted" x="1570" y="122"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="488" y="0"/>
-</item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1938" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="func.h" index="3">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="stm32f0xx.h" index="6">
-<position info="not_deleted" x="14919" y="13"/>
+<position info="not_deleted" x="858" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="488" y="0"/>
+<position info="not_deleted" x="4937" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="594" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1239" y="0"/>
+<position info="not_deleted" x="3642" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="594" y="0"/>
+<position info="not_deleted" x="4073" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="511" y="0"/>
+<position info="not_deleted" x="4482" y="0"/>
 </item>
-<item historyLabel="timer.h" index="7">
-<position info="not_deleted" x="64" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4894" y="0"/>
 </item>
-<item historyLabel="timer.c" index="2">
-<position info="not_deleted" x="1938" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4918" y="0"/>
 </item>
-<item historyLabel="func.c" index="1">
-<position info="not_deleted" x="1216" y="33"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5607" y="0"/>
 </item>
-<item historyLabel="func.h" index="12">
-<position info="not_deleted" x="204" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5615" y="0"/>
 </item>
-<item active="true" historyLabel="func.c" index="1">
-<position info="not_deleted" x="2297" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4063" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2409" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4995" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5304" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="5084" y="18"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -458,6 +470,35 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" tooltip="ElectronicLock/cmsis_boot/startup/startup_stm32f0xx.s">
+<persistable path="/ElectronicLock/cmsis_boot/startup/startup_stm32f0xx.s"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="ElectronicLock/stdio/printf.c">
+<persistable path="/ElectronicLock/stdio/printf.c"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" tooltip="ElectronicLock/func.c">
+<persistable path="/ElectronicLock/func.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="sh_cmd.s" tooltip="ElectronicLock/semihosting/sh_cmd.s">
+<persistable path="/ElectronicLock/semihosting/sh_cmd.s"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="semihosting.h" tooltip="ElectronicLock/semihosting/semihosting.h">
+<persistable path="/ElectronicLock/semihosting/semihosting.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\6.2 2016q4\arm-none-eabi\include\stdio.h">
+<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\6.2 2016q4\arm-none-eabi\include\stdio.h" project="ElectronicLock"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="semihosting.c" tooltip="ElectronicLock/semihosting/semihosting.c">
+<persistable path="/ElectronicLock/semihosting/semihosting.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.h" tooltip="ElectronicLock/cmsis_lib/include/stm32f0xx_gpio.h">
 <persistable path="/ElectronicLock/cmsis_lib/include/stm32f0xx_gpio.h"/>
 </file>
@@ -472,37 +513,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
 <persistable path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.c" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c">
-<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.h" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h">
-<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="readme.txt" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt">
-<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="RCsemiSTM32F4_Ver400/main.c">
-<persistable path="/RCsemiSTM32F4_Ver400/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="06_ADC.c" tooltip="RCsemiSTM32F4_Ver300/example/06_ADC.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/06_ADC.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="05_RotaryENC.c" tooltip="RCsemiSTM32F4_Ver300/example/05_RotaryENC.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/05_RotaryENC.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="04_PSpad.c" tooltip="RCsemiSTM32F4_Ver300/example/04_PSpad.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/04_PSpad.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="03_Motor.c" tooltip="RCsemiSTM32F4_Ver300/example/03_Motor.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/03_Motor.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="01_DigitalIO.c" tooltip="RCsemiSTM32F4_Ver300/example/01_DigitalIO.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/01_DigitalIO.c"/>
 </file>
 </mruList>
 </workbench>

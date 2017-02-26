@@ -1,31 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F042K6 -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib\include -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_core -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_boot -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\header -ID:\MicroController\STM32F0\ElectronicLock -ID:\MicroController\STM32F0">
-      <target file="func.o" lastModified="15a2d30a596">
-         <source file="..\..\..\func.c" lastModified="15a2d30a10f"/>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F042K6 -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib\include -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_lib -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\semihosting -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_core -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\cmsis_boot -ID:\MicroController\STM32F0\ElectronicLock\ElectronicLock_Program\header -ID:\MicroController\STM32F0\ElectronicLock -ID:\MicroController\STM32F0">
+      <target file="func.o" lastModified="15a764581fd">
+         <source file="..\..\..\func.c" lastModified="15a76457e88"/>
       </target>
-      <target file="timer.o" lastModified="159a66042ab">
+      <target file="timer.o" lastModified="15a6a47dc29">
          <source file="..\..\..\source\timer.c" lastModified="159a6449a69"/>
       </target>
-      <target file="stm32f0xx_gpio.o" lastModified="159a644a49b">
+      <target file="stm32f0xx_gpio.o" lastModified="15a6a47df53">
          <source file="..\..\..\cmsis_lib\source\stm32f0xx_gpio.c" lastModified="159a6409dd0"/>
       </target>
-      <target file="stm32f0xx_rcc.o" lastModified="159a644a259">
+      <target file="stm32f0xx_rcc.o" lastModified="15a6a47db79">
          <source file="..\..\..\cmsis_lib\source\stm32f0xx_rcc.c" lastModified="159a64092e3"/>
       </target>
-      <target file="main.o" lastModified="15a2d30a501">
-         <source file="..\..\..\main.c" lastModified="15a2d23d242"/>
+      <target file="printf.o" lastModified="15a6b77b984">
+         <source file="..\..\..\stdio\printf.c" lastModified="15a6b77459d"/>
       </target>
-      <target file="stm32f0xx_tim.o" lastModified="159a644a5a4">
-         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159a640bb8a"/>
+      <target file="main.o" lastModified="15a79d3b956">
+         <source file="..\..\..\main.c" lastModified="15a79d3b673"/>
       </target>
-      <target file="system_stm32f0xx.o" lastModified="159a644a612">
+      <target file="sh_cmd.o" lastModified="15a6a47df81">
+         <source file="..\..\..\semihosting\sh_cmd.s" lastModified="15a6a3f825e"/>
+      </target>
+      <target file="semihosting.o" lastModified="15a6a47d91e">
+         <source file="..\..\..\semihosting\semihosting.c" lastModified="15a6a3f825d"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="15a6a47e147">
          <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="159a6407d8d"/>
       </target>
-      <target file="stm32f0xx_exti.o" lastModified="159b5b2e587">
+      <target file="stm32f0xx_tim.o" lastModified="15a6a47e096">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159a640bb8a"/>
+      </target>
+      <target file="stm32f0xx_exti.o" lastModified="15a6a47e1ea">
          <source file="..\..\..\cmsis_lib\source\stm32f0xx_exti.c" lastModified="159b5959a28"/>
       </target>
-      <target file="startup_stm32f0xx.o" lastModified="159a644a353">
+      <target file="startup_stm32f0xx.o" lastModified="15a6a47dd47">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e"/>
       </target>
    </processor>

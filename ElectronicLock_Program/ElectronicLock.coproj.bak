@@ -22,7 +22,6 @@
         <Option name="nostartfiles" value="1"/>
         <Option name="LTO" value="0"/>
         <Option name="IsNewStartupCode" value="1"/>
-        <Option name="Library" value="Not use C Library"/>
         <LinkedLibraries/>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00008000" startValue="0x08000000"/>
@@ -66,8 +65,6 @@
     <ExcludeFile/>
   </Target>
   <Components path="./">
-    <Component id="31" name="Retarget printf" path="" type="2"/>
-    <Component id="33" name="Semihosting" path="" type="2"/>
     <Component id="46" name="M0 Cmsis Core" path="" type="2"/>
     <Component id="1079" name="cmsis_boot" path="" type="2"/>
     <Component id="1080" name="RCC" path="" type="2"/>
@@ -76,22 +73,18 @@
     <Component id="1099" name="TIM" path="" type="2"/>
   </Components>
   <Files>
-    <File name="stdio" path="" type="2"/>
     <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
     <File name="cmsis_core/core_cmInstr.h" path="cmsis_core/core_cmInstr.h" type="1"/>
     <File name="cmsis_lib/source/stm32f0xx_tim.c" path="cmsis_lib/source/stm32f0xx_tim.c" type="1"/>
     <File name="cmsis_lib/include/stm32f0xx_rcc.h" path="cmsis_lib/include/stm32f0xx_rcc.h" type="1"/>
-    <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f0xx.c" path="cmsis_boot/system_stm32f0xx.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_core/core_cmFunc.h" path="cmsis_core/core_cmFunc.h" type="1"/>
     <File name="func.c" path="func.c" type="1"/>
-    <File name="semihosting" path="" type="2"/>
     <File name="source" path="" type="2"/>
-    <File name="semihosting/sh_cmd.s" path="semihosting/sh_cmd.s" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="header" path="" type="2"/>
     <File name="cmsis_core" path="" type="2"/>
-    <File name="semihosting/semihosting.c" path="semihosting/semihosting.c" type="1"/>
     <File name="cmsis_boot/stm32f0xx.h" path="cmsis_boot/stm32f0xx.h" type="1"/>
     <File name="source/timer.c" path="source/timer.c" type="1"/>
     <File name="cmsis_lib/include/stm32f0xx_gpio.h" path="cmsis_lib/include/stm32f0xx_gpio.h" type="1"/>
@@ -105,8 +98,6 @@
     <File name="func.h" path="func.h" type="1"/>
     <File name="cmsis_boot/system_stm32f0xx.h" path="cmsis_boot/system_stm32f0xx.h" type="1"/>
     <File name="cmsis_lib/include" path="" type="2"/>
-    <File name="semihosting/semihosting.h" path="semihosting/semihosting.h" type="1"/>
-    <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
     <File name="cmsis_lib/include/stm32f0xx_tim.h" path="cmsis_lib/include/stm32f0xx_tim.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
     <File name="header/timer.h" path="header/timer.h" type="1"/>

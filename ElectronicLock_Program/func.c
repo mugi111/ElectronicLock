@@ -26,7 +26,7 @@ void SW_GPIO_Init()
 	SW_Input.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_Init(GPIOB, &SW_Input);
 
-	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
+	SW_Output.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_5;
 	SW_Output.GPIO_Mode = GPIO_Mode_OUT;
 	SW_Output.GPIO_PuPd = GPIO_PuPd_UP;
 	SW_Output.GPIO_Speed = GPIO_Speed_Level_1;

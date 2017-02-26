@@ -11,6 +11,7 @@ int column;
 int main(void)
 {
 	int i, j=0, k, l=0;
+	int flag[3];
     int keypad[12] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
     int keypad_prev[12] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
     SW_GPIO_Init();
@@ -19,53 +20,93 @@ int main(void)
 	TIM14_Init(480, 100);
 
 	NVIC_EnableIRQ(TIM14_IRQn);
-  printf("fly");
 
     while(1)
     {
-
+//    	for (i = 0; i < 10000; i++) {
+//
+//    	}
 RETURN:
-    	for(i=0;i<12;i++)	keypad[i] = -1;
-		switch(column){
-			case 0:
-				if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1))	keypad[1] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))	keypad[4] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6)) 	keypad[7] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7))	keypad[10] = 1;
-				break;
-			case 1:
-				if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1))	keypad[2] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5)) 	keypad[5] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))	keypad[8] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7))	keypad[0] = 1;
-				break;
-			case 2:
-				if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1)) 	keypad[3] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))	keypad[6] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))	keypad[9] = 1;
-				else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)) 	keypad[11] = 1;
-				break;
-			default:
-				for(i=0;i<12;i++){
-					if(keypad_prev[i] != keypad[i]){
-						if(i < 10){
-							if(keypad_prev[i] != keypad[i]){
+//		column++;
+//
+//		if(column==3){
+//			column = 0;
+//		}
 
-							}
-						}else if(i == 10){
-							NVIC_EnableIRQ(TIM14_IRQn);
-						}else if(i == 11){
-							NVIC_DisableIRQ(TIM14_IRQn);
-							GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
-							GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
-							GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
 
-							goto WAIT;
+		for(i=0;i<3;i++){
+			Chenge_Output(i);
+			switch(i){
+				case 0:
+					if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1))	keypad[1] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))	keypad[4] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6)) 	keypad[7] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7))	keypad[10] = 1;
+					else{
+						keypad[1] = -1;
+						keypad[4] = -1;
+						keypad[7] = -1;
+						keypad[10] = -1;
+
+					}
+					flag[0] = 1;
+					break;
+				case 1:
+					if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1))	keypad[2] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5)) 	keypad[5] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))	keypad[8] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7))	keypad[0] = 1;
+					else{
+						keypad[2] = -1;
+						keypad[5] = -1;
+						keypad[8] = -1;
+						keypad[0] = -1;
+					}
+					flag[1] = 1;
+					break;
+				case 2:
+					if	   (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1)) 	keypad[3] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))	keypad[6] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))	keypad[9] = 1;
+					else if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)) 	keypad[11] = 1;
+					else{
+						keypad[3] = -1;
+						keypad[6] = -1;
+						keypad[9] = -1;
+						keypad[11] = -1;
+					}
+					flag[2] = 1;
+					break;
+				default:
+					break;
+			}
+		}
+
+		if(flag[0]&&flag[1]&&flag[2]){
+			for(i=0;i<3;i++)	flag[i] = 0;
+			for(i=0;i<12;i++){
+				if((keypad_prev[i] != keypad[i])&&(keypad[i] == -1)){
+					if(i < 10){
+						k++;
+						if(k > 3){
+							GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
+							k=0;
 						}
+					}else if(i == 10){
+						NVIC_EnableIRQ(TIM14_IRQn);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
+					}else if(i == 11){
+						NVIC_DisableIRQ(TIM14_IRQn);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+
+						goto WAIT;
 					}
 				}
-				break;
 			}
+		}
 		for (i = 0; i < 12; i++) keypad_prev[i] = keypad[i];
 		if(keypad_prev[0]==1){
 			GPIO_WriteBit(GPIOA, GPIO_Pin_0, 0);
@@ -137,6 +178,7 @@ RETURN:
     while(1){
 WAIT:
 		if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)){
+			for (i = 0; i < 12; ++i)	keypad_prev[i] = -1;
 			NVIC_EnableIRQ(TIM14_IRQn);
 			goto RETURN;
 		}
@@ -145,12 +187,8 @@ WAIT:
 
 void TIM14_IRQHandler(void)
 {
-	column++;
+	int i;
 
-	if(column==4){
-		column = 0;
-	}
-	Chenge_Output(column);
 	TIM_ClearITPendingBit(TIM14,  TIM_IT_Update);
 }
 

@@ -1,16 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=ElectronicLock.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock -TC:\CooCox\CoIDE\configuration\ProgramData\ElectronicLock/arm-gcc-link.ld -g">
-      <target file="ElectronicLock.elf" lastModified="15a2d30a84d">
-         <source file="..\obj\stm32f0xx_rcc.o" lastModified="159a644a259"/>
-         <source file="..\obj\timer.o" lastModified="159a66042ab"/>
-         <source file="..\obj\main.o" lastModified="15a2d30a501"/>
-         <source file="..\obj\startup_stm32f0xx.o" lastModified="159a644a353"/>
-         <source file="..\obj\func.o" lastModified="15a2d30a596"/>
-         <source file="..\obj\stm32f0xx_gpio.o" lastModified="159a644a49b"/>
-         <source file="..\obj\stm32f0xx_tim.o" lastModified="159a644a5a4"/>
-         <source file="..\obj\system_stm32f0xx.o" lastModified="159a644a612"/>
-         <source file="..\obj\stm32f0xx_exti.o" lastModified="159b5b2e587"/>
+      <target file="ElectronicLock.elf" lastModified="15a79d3bbb9">
+         <source file="..\obj\semihosting.o" lastModified="15a6a47d91e"/>
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="15a6a47db79"/>
+         <source file="..\obj\timer.o" lastModified="15a6a47dc29"/>
+         <source file="..\obj\main.o" lastModified="15a79d3b956"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="15a6a47dd47"/>
+         <source file="..\obj\printf.o" lastModified="15a6b77b984"/>
+         <source file="..\obj\func.o" lastModified="15a764581fd"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="15a6a47df53"/>
+         <source file="..\obj\sh_cmd.o" lastModified="15a6a47df81"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="15a6a47e096"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="15a6a47e147"/>
+         <source file="..\obj\stm32f0xx_exti.o" lastModified="15a6a47e1ea"/>
       </target>
    </processor>
 </history>
