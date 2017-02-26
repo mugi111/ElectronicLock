@@ -16,8 +16,8 @@
       <target file="printf.o" lastModified="15a6b77b984">
          <source file="..\..\..\stdio\printf.c" lastModified="15a6b77459d"/>
       </target>
-      <target file="main.o" lastModified="15a79dfc817">
-         <source file="..\..\..\main.c" lastModified="15a79dfc396"/>
+      <target file="main.o" lastModified="15a79f2e33f">
+         <source file="..\..\..\main.c" lastModified="15a79f2e033"/>
       </target>
       <target file="sh_cmd.o" lastModified="15a6a47df81">
          <source file="..\..\..\semihosting\sh_cmd.s" lastModified="15a6a3f825e"/>
@@ -25,17 +25,17 @@
       <target file="semihosting.o" lastModified="15a6a47d91e">
          <source file="..\..\..\semihosting\semihosting.c" lastModified="15a6a3f825d"/>
       </target>
-      <target file="stm32f0xx_tim.o" lastModified="15a6a47e096">
-         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159a640bb8a"/>
-      </target>
       <target file="system_stm32f0xx.o" lastModified="15a6a47e147">
          <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="159a6407d8d"/>
       </target>
-      <target file="startup_stm32f0xx.o" lastModified="15a6a47dd47">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e"/>
+      <target file="stm32f0xx_tim.o" lastModified="15a6a47e096">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="159a640bb8a"/>
       </target>
       <target file="stm32f0xx_exti.o" lastModified="15a6a47e1ea">
          <source file="..\..\..\cmsis_lib\source\stm32f0xx_exti.c" lastModified="159b5959a28"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="15a6a47dd47">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e"/>
       </target>
    </processor>
 </history>
