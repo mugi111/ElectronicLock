@@ -87,11 +87,8 @@ RETURN:
 			for(i=0;i<12;i++){
 				if((keypad_prev[i] != keypad[i])&&(keypad[i] == -1)){
 					if(i < 10){
-						k++;
-						if(k > 3){
-							GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
-							k=0;
-						}
+						for (j=2; j>=0; j--)	input[j+1] = input[j];
+						input[0] = i;
 					}else if(i == 10){
 						NVIC_EnableIRQ(TIM14_IRQn);
 						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
@@ -101,6 +98,7 @@ RETURN:
 						GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
 						GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
 						GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+						Check_Pass();
 
 						goto WAIT;
 					}

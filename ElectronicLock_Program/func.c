@@ -36,7 +36,7 @@ void SW_GPIO_Init()
 void Check_Pass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
-		DriveServo(90);
+		GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
 	}
 }
 
