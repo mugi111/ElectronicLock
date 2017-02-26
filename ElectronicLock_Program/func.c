@@ -2,10 +2,10 @@
 #include "stm32f0xx_rcc.h"
 #include "stm32f0xx_exti.h"
 #include "func.h"
+#include "timer.h"
 
 int pass[4] = {3, 5, 0, 2};
 int input[4] = {-1, -1, -1, -1};
-int inputCNT = 0;
 
 void SW_GPIO_Init()
 {
@@ -37,6 +37,7 @@ void Check_Pass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
 		GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
+		TIM3CH1_PWMConfig(1);
 	}
 }
 
@@ -61,9 +62,4 @@ void Chenge_Output(int status)
 		default:
 			break;
 	}
-}
-
-void DriveServo(int dig)
-{
-
 }
