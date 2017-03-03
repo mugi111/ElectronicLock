@@ -16,10 +16,10 @@ int main(void)
     int keypad_prev[12] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
     SW_GPIO_Init();
 	TIM3_Init(4800, 200);
-	TIM3CH1_PWMConfig(4600);	//d = deg * 0.05 + 0.9 + 520 (us)4680
 	NVIC_EnableIRQ(TIM3_IRQn);
+	TIM3CH1_PWMInit(95);	//d = deg * 0.05 + 0.9 + 520 (us)4680
 
-    while(1)
+	while(1)
     {
 RETURN:
 		for(i=0;i<3;i++){
@@ -163,7 +163,7 @@ RETURN:
     while(1){
 WAIT:
 		if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)){
-			TIM3CH1_PWMConfig(200); //‚È‚º‚ª“ü—Í‚·‚é’l‚ª‰Šú‰»Žž‚Æ”½“]‚·‚é
+			TIM3CH1_PWMConfig(95);
 			for (i = 0; i < 12; i++)	keypad_prev[i] = -1;
 			for(i=0;i<4;i++)	input[i] = -1;
 			GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);

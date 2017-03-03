@@ -18,17 +18,17 @@ void TIM3_Init(uint32_t period, uint32_t prescaler)
 	TIM_TimeBaseInit(TIM3, &TIM3_TimeBase);
 }
 
-void TIM3CH1_PWMConfig(int pulse) //TODO: èâä˙âªÇ∆ï™äÑÇ∑ÇÈ
+void TIM3CH1_PWMInit(int pulse) //TODO: èâä˙âªÇ∆ï™äÑÇ∑ÇÈ
 {
 	TIM_OCInitTypeDef TIM3_PWMConfig;
 	TIM3_PWMConfig.TIM_OCMode = TIM_OCMode_PWM1;
 	TIM3_PWMConfig.TIM_OutputState = TIM_OutputState_Enable;
-	TIM3_PWMConfig.TIM_OCNPolarity = TIM_OCPolarity_High;
+	TIM3_PWMConfig.TIM_OCPolarity = TIM_OCPolarity_High;
+	TIM3_PWMConfig.TIM_OCIdleState = TIM_OCIdleState_Set;
 	TIM3_PWMConfig.TIM_Pulse = pulse-1;
 
 	TIM_OC1Init(TIM3, &TIM3_PWMConfig);
 	TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Enable);
-
 
 	TIM_ARRPreloadConfig(TIM3, ENABLE);
 	TIM_Cmd(TIM3, ENABLE);
@@ -39,14 +39,7 @@ void TIM3CH1_PWMConfig(int pulse) //TODO: èâä˙âªÇ∆ï™äÑÇ∑ÇÈ
 	TIM3_CH1_Config.GPIO_OType = GPIO_OType_PP;
 	TIM3_CH1_Config.GPIO_Mode = GPIO_Mode_AF;
 	TIM3_CH1_Config.GPIO_Pin = GPIO_Pin_4;
-	TIM3_CH1_Config.GPIO_Speed = GPIO_Speed_Level_1;
-	GPIO_Init(GPIOB, &TIM3_CH1_Config);
-
-	TIM3_CH1_Config.GPIO_OType = GPIO_OType_PP;
-	TIM3_CH1_Config.GPIO_Mode = GPIO_Mode_IN;
-	TIM3_CH1_Config.GPIO_PuPd = GPIO_PuPd_DOWN;
-	TIM3_CH1_Config.GPIO_Pin = GPIO_Pin_5;
-	TIM3_CH1_Config.GPIO_Speed = GPIO_Speed_Level_1;
+	TIM3_CH1_Config.GPIO_Speed = GPIO_Speed_Level_3;
 	GPIO_Init(GPIOB, &TIM3_CH1_Config);
 
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource4, GPIO_AF_1);
@@ -72,5 +65,15 @@ void TIM14_Init(uint32_t period, uint32_t prescaler)
 	TIM_Cmd(TIM14, ENABLE);
 }
 
+void TIM3CH1_PWMConfig(int pulse)
+{
+	TIM_OCInitTypeDef TIM3_PWMConfig;
+	TIM3_PWMConfig.TIM_OCMode = TIM_OCMode_PWM1;
+	TIM3_PWMConfig.TIM_OutputState = TIM_OutputState_Enable;
+	TIM3_PWMConfig.TIM_OCPolarity = TIM_OCPolarity_High;
+	TIM3_PWMConfig.TIM_OCIdleState = TIM_OCIdleState_Set;
+	TIM3_PWMConfig.TIM_Pulse = pulse-1;
 
-
+	TIM_OC1Init(TIM3, &TIM3_PWMConfig);
+	TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Enable);
+}

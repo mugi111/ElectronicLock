@@ -37,7 +37,7 @@ void Check_Pass()
 {
 	if((pass[0]==input[0])&&(pass[1]==input[1])&&(pass[2]==input[2])&&(pass[3]==input[3])){
 		GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
-		TIM3CH1_PWMConfig(1);
+		TIM3CH1_PWMConfig(30);
 	}
 }
 

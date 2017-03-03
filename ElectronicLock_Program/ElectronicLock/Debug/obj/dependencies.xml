@@ -7,7 +7,7 @@
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e">
       </source>
-      <source file="..\..\..\header\timer.h" lastModified="159a660405a">
+      <source file="..\..\..\header\timer.h" lastModified="15a920989de">
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_tim.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="159a6408166">
@@ -36,7 +36,7 @@
       </source>
       <source file="..\..\..\semihosting\semihosting.h" lastModified="15a6a3f825e">
       </source>
-      <source file="..\..\..\main.c" lastModified="15a7b80ee38">
+      <source file="..\..\..\main.c" lastModified="15a92549e4f">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_exti.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_gpio.h"/>
@@ -62,14 +62,14 @@
       <source file="..\..\..\semihosting\semihosting.c" lastModified="15a6a3f8a2d">
          <include file="..\..\..\semihosting\semihosting.h"/>
       </source>
-      <source file="..\..\..\func.c" lastModified="15a7b80ea5b">
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="159a6407d8d">
+      </source>
+      <source file="..\..\..\func.c" lastModified="15a88dc156f">
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_exti.h"/>
          <include file="..\..\..\func.h"/>
          <include file="..\..\..\header\timer.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="159a6407d8d">
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="159a6407d8d">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
@@ -81,9 +81,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f0xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="159a6407d7e">
-      </source>
-      <source file="..\..\..\header\timer.h" lastModified="159a660405a">
-         <include file="..\..\..\cmsis_lib\include\stm32f0xx_tim.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f0xx_tim.h" lastModified="159a640bb8a">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
