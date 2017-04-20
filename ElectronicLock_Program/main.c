@@ -15,13 +15,14 @@ int main(void)
     int keypad[12] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
     int keypad_prev[12] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
     SW_GPIO_Init();
-	TIM3_Init(4800, 200);
+	TIM3_Init(4800, 200);//4800 200
 	NVIC_EnableIRQ(TIM3_IRQn);
 	TIM3CH1_PWMInit(95);	//d = deg * 0.05 + 0.9 + 520 (us)4680
-
+//
 	while(1)
     {
 RETURN:
+GPIO_WriteBit(GPIOA, GPIO_Pin_5, 1);
 		for(i=0;i<3;i++){
 			Chenge_Output(i);
 			switch(i){
@@ -80,11 +81,11 @@ RETURN:
 					}else if(i == 10){
 						for(j=0;j<4;j++)	input[j] = -1;
 					}else if(i == 11){
-						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
-						GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_10,1);
 						GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
-						GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+						GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
 						Check_Pass();
+						GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
 
 						goto WAIT;
 					}
@@ -166,7 +167,7 @@ WAIT:
 			TIM3CH1_PWMConfig(95);
 			for (i = 0; i < 12; i++)	keypad_prev[i] = -1;
 			for(i=0;i<4;i++)	input[i] = -1;
-			GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
+//			GPIO_WriteBit(GPIOA, GPIO_Pin_5, 0);
 			goto RETURN;
 		}
     }

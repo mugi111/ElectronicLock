@@ -4,7 +4,7 @@
 #include "func.h"
 #include "timer.h"
 
-int pass[4] = {3, 5, 0, 2};
+int pass[4] = {0, 0, 0, 0};
 int input[4] = {-1, -1, -1, -1};
 
 void SW_GPIO_Init()
@@ -45,19 +45,19 @@ void Chenge_Output(int status)
 {
 	switch(status){
 		case 0:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 1);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
 			break;
 		case 1:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 1);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
 			break;
 		case 2:
-			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 0);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 0);
 			GPIO_WriteBit(GPIOA, GPIO_Pin_9, 0);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_10, 1);
+			GPIO_WriteBit(GPIOA, GPIO_Pin_8, 1);
 			break;
 		default:
 			break;

@@ -27,13 +27,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" title="main.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" title="main.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="499" selectionTopPixel="1950"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2150" selectionTopPixel="2670"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="timer.c" partName="timer.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" title="timer.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="timer.c" partName="timer.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" title="timer.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/source/timer.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/source/timer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="795" selectionTopPixel="255"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1066" selectionTopPixel="967"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.h" partName="func.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" title="func.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.h"/>
@@ -41,7 +41,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" partName="func.c" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" title="func.c" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/func.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/func.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1244" selectionTopPixel="552"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1738" selectionTopPixel="729"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_tim.h" partName="stm32f0xx_tim.h" path="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_tim.h" title="stm32f0xx_tim.h" tooltip="D:/MicroController/STM32F0/ElectronicLock/ElectronicLock_Program/cmsis_lib/include/stm32f0xx_tim.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h"/>
@@ -67,7 +67,7 @@
 </viewState>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="21">
+<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="18">
 <expanded>
 <element path="/ElectronicLock"/>
 <element path="/ElectronicLock/cmsis_boot"/>
@@ -80,7 +80,7 @@
 <element path="/ElectronicLock/stdio"/>
 </expanded>
 <selection>
-<element path="/ElectronicLock/source/timer.c"/>
+<element path="/ElectronicLock/main.c"/>
 </selection>
 </viewState>
 </view>
@@ -284,168 +284,161 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_gpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/source/stm32f0xx_tim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/source/stm32f0xx_tim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/header/timer.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/source/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ElectronicLock/func.h"/>
 </editors>
-<item historyLabel="timer.c" index="3">
-<position info="not_deleted" x="309" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_tim.h" index="4">
-<position info="not_deleted" x="15134" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1735" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5308" y="0"/>
+<position info="not_deleted" x="1631" y="1"/>
 </item>
-<item historyLabel="timer.c" index="3">
-<position info="not_deleted" x="1366" y="0"/>
+<item historyLabel="func.h" index="1">
+<position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_gpio.h" index="5">
-<position info="not_deleted" x="3042" y="18"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1735" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5308" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
 </item>
-<item historyLabel="timer.c" index="3">
-<position/>
+<item historyLabel="timer.c" index="4">
+<position info="not_deleted" x="1066" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_tim.h" index="4">
-<position info="not_deleted" x="24049" y="1"/>
+<item historyLabel="func.h" index="5">
+<position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="func.c" index="1">
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1735" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
+</item>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1435" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
+</item>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="func.h" index="5">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="timer.c" index="4">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
+</item>
+<item historyLabel="func.h" index="5">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="func.c" index="2">
 <position info="not_deleted" x="1249" y="0"/>
 </item>
-<item historyLabel="func.h" index="2">
-<position info="not_deleted" x="162" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
 </item>
-<item historyLabel="timer.c" index="3">
-<position info="not_deleted" x="1007" y="0"/>
-</item>
-<item historyLabel="stm32f0xx_tim.c" index="6">
-<position info="not_deleted" x="42959" y="0"/>
-</item>
-<item historyLabel="timer.c" index="3">
-<position info="not_deleted" x="851" y="0"/>
-</item>
-<item historyLabel="func.c" index="1">
+<item historyLabel="func.c" index="2">
 <position info="not_deleted" x="1249" y="0"/>
 </item>
-<item historyLabel="func.h" index="2">
+<item historyLabel="timer.c" index="4">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1681" y="1"/>
+</item>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1189" y="36"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="511" y="0"/>
+</item>
+<item historyLabel="func.h" index="5">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="timer.c" index="3">
-<position info="not_deleted" x="1008" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1189" y="36"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5308" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="441" y="1"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1189" y="36"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="1378" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="441" y="1"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="454" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1751" y="0"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="1378" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="405" y="0"/>
 </item>
-<item historyLabel="stm32f0xx_tim.c" index="8">
-<position info="not_deleted" x="42959" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1607" y="133"/>
 </item>
-<item historyLabel="func.h" index="9">
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="405" y="0"/>
+</item>
+<item historyLabel="func.h" index="5">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="timer.h" index="10">
-<position info="not_deleted" x="179" y="0"/>
+<item historyLabel="timer.c" index="4">
+<position info="not_deleted" x="1066" y="0"/>
 </item>
-<item historyLabel="func.h" index="9">
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2464" y="0"/>
+</item>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1326" y="122"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2464" y="0"/>
+</item>
+<item historyLabel="func.h" index="5">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2372" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1326" y="122"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="454" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2374" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="499" y="0"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2372" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5238" y="0"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2372" y="0"/>
-</item>
-<item historyLabel="timer.h" index="10">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="func.h" index="9">
+<item historyLabel="func.h" index="5">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="func.c" index="11">
-<position info="not_deleted" x="1249" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1326" y="122"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2372" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2462" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="timer.c" index="4">
+<position info="not_deleted" x="1066" y="0"/>
 </item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2372" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1738" y="0"/>
 </item>
-<item historyLabel="func.h" index="9">
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2527" y="0"/>
+</item>
+<item historyLabel="func.h" index="5">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="func.c" index="11">
-<position info="not_deleted" x="1249" y="0"/>
+<item historyLabel="func.c" index="2">
+<position info="not_deleted" x="1738" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2051" y="17"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2467" y="0"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2084" y="36"/>
-</item>
-<item historyLabel="stm32f0xx_tim.h" index="12">
-<position info="not_deleted" x="24049" y="1"/>
-</item>
-<item historyLabel="stm32f0xx_tim.h" index="12">
-<position info="not_deleted" x="5432" y="17"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="906" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="499" y="0"/>
-</item>
-<item historyLabel="timer.c" index="7">
-<position info="not_deleted" x="906" y="0"/>
-</item>
-<item historyLabel="func.c" index="11">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item active="true" historyLabel="timer.c" index="7">
-<position info="not_deleted" x="2051" y="17"/>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="2527" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -454,6 +447,36 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_Startup.c" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/Startup/stm32f4xx_Startup.c">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/Startup/stm32f4xx_Startup.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4_simd.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cm4_simd.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cm4_simd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cm4.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cm4.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cmFunc.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cmFunc.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/CMSIS/core_cmFunc.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_StdFramework.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/stm32f4xx_StdFramework.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/stm32f4xx_StdFramework.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_StdFrameworkConfig.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/stm32f4xx_StdFrameworkConfig.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/stm32f4xx_StdFrameworkConfig.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/StdPeriphLib/system_stm32f4xx.h">
+<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/StdPeriphLib/system_stm32f4xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rotary_encoder.h" tooltip="RCsemiSTM32F4_Ver300/lib/rcsemi/inc/rotary_encoder.h">
+<persistable path="/RCsemiSTM32F4_Ver300/lib/rcsemi/inc/rotary_encoder.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/stm32f4xx.h">
+<persistable path="/RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/stm32f4xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rotary_encoder.c" tooltip="RCsemiSTM32F4_Ver300/lib/rcsemi/src/rotary_encoder.c">
+<persistable path="/RCsemiSTM32F4_Ver300/lib/rcsemi/src/rotary_encoder.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="timer.h" tooltip="ElectronicLock/header/timer.h">
 <persistable path="/ElectronicLock/header/timer.h"/>
 </file>
@@ -465,37 +488,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_tim.h" tooltip="ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h">
 <persistable path="/ElectronicLock/cmsis_lib/include/stm32f0xx_tim.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pspad.c" tooltip="RCsemiSTM32F4_Ver200/lib/rcsemi/src/pspad.c">
-<persistable path="/RCsemiSTM32F4_Ver200/lib/rcsemi/src/pspad.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pspad.h" tooltip="RCsemiSTM32F4_Ver200/lib/rcsemi/inc/pspad.h">
-<persistable path="/RCsemiSTM32F4_Ver200/lib/rcsemi/inc/pspad.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
-<persistable path="/RCsemiSTM32F4_Ver200/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.h" tooltip="RCsemiSTM32F4_Ver200/lib/rcsemi/inc/digitalIO.h">
-<persistable path="/RCsemiSTM32F4_Ver200/lib/rcsemi/inc/digitalIO.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" tooltip="ElectronicLock/cmsis_boot/startup/startup_stm32f0xx.s">
-<persistable path="/ElectronicLock/cmsis_boot/startup/startup_stm32f0xx.s"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="ElectronicLock/stdio/printf.c">
-<persistable path="/ElectronicLock/stdio/printf.c"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="func.c" tooltip="ElectronicLock/func.c">
-<persistable path="/ElectronicLock/func.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="sh_cmd.s" tooltip="ElectronicLock/semihosting/sh_cmd.s">
-<persistable path="/ElectronicLock/semihosting/sh_cmd.s"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="semihosting.h" tooltip="ElectronicLock/semihosting/semihosting.h">
-<persistable path="/ElectronicLock/semihosting/semihosting.h"/>
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\6.2 2016q4\arm-none-eabi\include\stdio.h">
 <persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\6.2 2016q4\arm-none-eabi\include\stdio.h" project="ElectronicLock"/>
